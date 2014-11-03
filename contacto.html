@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<style>
+	body {
+		background: #333;
+		color: #FFFFFF;
+		font-family: 'helvetica';
+		font-size: 18px;
+		width: 100%;
+	}
+	.hidden {
+		display: none;
+	}
+	.contacto {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		max-width: 30%;
+		background: #fff;
+		padding: 1em;
+		margin-bottom: 1em;
+		margin: 2em;
+	}
+	h1 {
+		background: #fff;
+		background-size: cover; 
+		color: #32c9ad;
+		text-align: center;
+		font-size: 1.5em;
+	}
+	form {
+		max-width: 100%;
+		padding: 1em;
+	}
+	i {
+		float: left;
+		max-width: 15%;
+		color: #fff;
+	}
+	input {
+		float: right;
+		max-width: 90%;
+		color: #FF0080;
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	.boton {
+		float: right;
+		height: 50px;
+		width: 50px;
+		background: #FF0080;
+		border-radius: 50%;
+		color: #fff;
+		border: none;
+		box-shadow: 0 0 10px #555;
+	}
+	.boton:hover {
+		background: #fff;
+		color: #FF0080;
+	}
+	textarea {
+		color: #FF0080;
+		display: block;
+		width: 100%;
+		margin-bottom: 1em;
+	}
+	.material{
+		max-width: 100%;
+	}
+	.md-1 {
+		margin: -18px;
+		margin-bottom: 2.5em;
+	}
+	.md-2 {
+		margin: -18px;
+		background: #32c9ad;
+	}
+	</style>
+	<!--[if gte IE 9]>
+	<style type="text/css">
+	.gradient {
+		filter: none;
+	}
+	</style>
+	<![endif]-->
+</head>
+<body>
+	<section class="contacto">
+		<section class="material">
+			<section class="md-1">
+				<h1>Formulario de Contacto</h1>
+			</section>
+			<section class="md-2">
+				<form method="post" action="web_contacto.php">
+					<i class="fa hidden"></i><input placeholder="Nombre" name="nombre" type="text" />
+					<i class="fa fa-user"></i><input placeholder="E-Mail" name="email" type="email" />
+					<i class="fa fa-envelope"></i><input placeholder="Teléfono" name="telefono" type="tel" />
+					<i class="fa fa-phone"></i><input placeholder="Asunto" name="asunto" type="text" />
+					<i class="fa fa-pencil"></i><textarea placeholder="Comentario" name="comentario"></textarea>
+					<input class="boton" name="enviar" type="submit" value='Enviar' />
+				</form>
+			</section>
+		</section>
+	</section>
+</body>
+</html>
