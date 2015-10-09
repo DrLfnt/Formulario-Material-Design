@@ -56,7 +56,7 @@
         $Mail->Subject = $asunto;
         $Mail->Body = $TxtMensa;
 
- 	 $Mail->AddAddress("mail@mail.com", "nombre de a quien va dirigido");
+ 	 $Mail->AddAddress("drlfnt@gmail.com", "nombre de a quien va dirigido");
 	 $Mail->Send();
 	// Este es el archivo que contendra el mensaje de agradecimiento o puede ingresar otra ruta para que lo redireccione despues de enviado el correo
 	 include ("contacto_gracias.php");
